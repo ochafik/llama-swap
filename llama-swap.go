@@ -39,7 +39,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	conf, err := config.LoadConfig(*configPath)
+	conf, err := config.LoadConfigOrDiscover(*configPath)
 	if err != nil {
 		fmt.Printf("Error loading config: %v\n", err)
 		os.Exit(1)
@@ -68,7 +68,7 @@ func main() {
 	// Support for watching config and reloading when it changes
 	reloadProxyManager := func() {
 		if currentPM, ok := srv.Handler.(*proxy.ProxyManager); ok {
-			conf, err = config.LoadConfig(*configPath)
+			conf, err = config.LoadConfigOrDiscover(*configPath)
 			if err != nil {
 				fmt.Printf("Warning, unable to reload configuration: %v\n", err)
 				return
@@ -86,7 +86,7 @@ func main() {
 				})
 			})
 		} else {
-			conf, err = config.LoadConfig(*configPath)
+			conf, err = config.LoadConfigOrDiscover(*configPath)
 			if err != nil {
 				fmt.Printf("Error, unable to load configuration: %v\n", err)
 				os.Exit(1)

@@ -1,3 +1,5 @@
+github.com/abrander/gguf v0.0.0-20231228004541-3d15a052a17f h1:0N46UDO1o1dd1miAx6yh5F9ABZIOGs81tsjTFYMcNkw=
+github.com/abrander/gguf v0.0.0-20231228004541-3d15a052a17f/go.mod h1:5BQP8kdzjiZiAtfTARj1BAPhjQkbPXOXD62nB+bLwXc=
 github.com/billziss-gh/golib v0.2.0 h1:NyvcAQdfvM8xokKkKotiligKjKXzuQD4PPykg1nKc/8=
 github.com/billziss-gh/golib v0.2.0/go.mod h1:mZpUYANXZkDKSnyYbX9gfnyxwe0ddRhUtfXcsD5r8dw=
 github.com/bytedance/sonic v1.11.6 h1:oUp34TzMlL+OY1OUWxHqsdkgC/Zfc85zGqw9siXjrc0=

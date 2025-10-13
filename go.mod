@@ -13,6 +13,7 @@ require (
 )
 
 require (
+	github.com/abrander/gguf v0.0.0-20231228004541-3d15a052a17f // indirect
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
